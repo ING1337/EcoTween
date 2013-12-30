@@ -21,13 +21,13 @@ package
 		private var i:int, prop:String, tween:EcoTween, dispatcher:Shape, valueMap:Array;
 
 		public function EcoTween(_target:Object = null, _length:Number = 0, _values:Object = null, _spread:uint = EcoUtils.SPREAD_NONE, _easing:String = EcoUtils.EASE_LINEAR, _start:Number = 0, _speed:Number = 1) {
-			target	= _target;
-			length	= _length;
-			values	= _values;
-			spread	= _spread;
-			easing	= _easing;
-			start	= _start;
-			speed	= _speed;
+			target = _target;
+			length = _length;
+			values = _values;
+			spread = _spread;
+			easing = _easing;
+			start  = _start;
+			speed  = _speed;
 		}
 		
 		// ########################################################################################################################
