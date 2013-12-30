@@ -5,10 +5,10 @@ package
 	
 	public class EcoTween
 	{
-		public var tweens:Vector.<EcoTween>	= new Vector.<EcoTween>();
-		public var isPlaying:Boolean		= false;
-		public var frame:Number			= 0;
-		public var lastFrame:Number		= 0;
+		public var tweens:Vector.<EcoTween>  = new Vector.<EcoTween>();
+		public var isPlaying:Boolean         = false;
+		public var frame:Number              = 0;
+		public var lastFrame:Number          = 0;
 		
 		public var target:Object;
 		public var length:Number;
