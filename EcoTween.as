@@ -6,9 +6,9 @@ package
 	public class EcoTween
 	{
 		public var tweens:Vector.<EcoTween>	= new Vector.<EcoTween>();
-		public var isPlaying:Boolean			= false;
-		public var frame:Number					= 0;
-		public var lastFrame:Number			= 0;
+		public var isPlaying:Boolean		= false;
+		public var frame:Number			= 0;
+		public var lastFrame:Number		= 0;
 		
 		public var target:Object;
 		public var length:Number;
@@ -26,8 +26,8 @@ package
 			values	= _values;
 			spread	= _spread;
 			easing	= _easing;
-			start		= _start;
-			speed		= _speed;
+			start	= _start;
+			speed	= _speed;
 		}
 		
 		// ########################################################################################################################
@@ -61,7 +61,6 @@ package
 		
 		private function getValue(_value:Number) : Number {
 			return EcoUtils[easing](0, _value, frame / length) - EcoUtils[easing](0, _value, lastFrame / length);
-			//return EcoUtils.round(EcoUtils[easing](0, _value, frame / length), 2) - EcoUtils.round(EcoUtils[easing](0, _value, lastFrame / length), 2);
 		}
 		
 		// ########################################################################################################################
