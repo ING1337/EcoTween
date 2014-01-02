@@ -39,7 +39,7 @@ package
 		}
 		
 		public static function easeIn(val1:Number, val2:Number, ratio:Number) : Number {
-			return val1 + (val2 - val1) * ratio * ratio * ratio; //linear(val1, val2, ratio * ratio * ratio);
+			return val1 + (val2 - val1) * ratio * ratio * ratio;
 		}
 		
 		public static function easeOut(val1:Number, val2:Number, ratio:Number) : Number {
@@ -48,7 +48,6 @@ package
 		
 		public static function easeInOut(val1:Number, val2:Number, ratio:Number) : Number {
 		   return .5 * (easeIn(val1, val2, (ratio < .5 ? ratio : ratio - 1) * 2) + (ratio < .5 ? 0 : val2 * 2));
-			//return .5 * (easeIn(val1, val2, (ratio < .5 ? ratio : ratio - 1) * 2) + val2 * (ratio < .5 ? 0 : 2));
 		}
 		
 		public static function round(num:Number, decimals:Number) : Number {
