@@ -47,12 +47,12 @@ package
 		}
 		
 		public static function easeInOut(val1:Number, val2:Number, ratio:Number) : Number {
-		   return .5 * (easeIn(val1, val2, (ratio < .5 ? ratio : ratio - 1) * 2) + (ratio < .5 ? 0 : val2 * 2));
+			return .5 * (easeIn(val1, val2, (ratio < .5 ? ratio : ratio - 1) * 2) + (ratio < .5 ? 0 : val2 * 2));
 		}
 		
 		public static function round(num:Number, decimals:Number) : Number {
-				var p:Number = Math.pow(10, decimals);
-				return Math.round(num * p) / p;
+			var p:Number = Math.pow(10, decimals);
+			return Math.round(num * p) / p;
 		}
 	}
 }
